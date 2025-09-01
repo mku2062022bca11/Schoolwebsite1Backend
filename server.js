@@ -6,6 +6,13 @@ const userRoutes = require("./Routes/userRoutes");
 const galleryRoutes = require("./Routes/galleryRoutes"); // Import gallery routes
 
 dotenv.config();
+// middleware
+app.use(express.json());
+app.use(cors({
+    origin: [  'https://book-app-frontend-tau.vercel.app'],
+    credentials: true
+}))
+
 
 
 
