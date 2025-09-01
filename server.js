@@ -7,11 +7,8 @@ const galleryRoutes = require("./Routes/galleryRoutes"); // Import gallery route
 
 dotenv.config();
 // middleware
-app.use(express.json());
-app.use(cors({
-    origin: [  'https://book-app-frontend-tau.vercel.app'],
-    credentials: true
-}))
+ 
+
 
 
 
@@ -21,8 +18,11 @@ connectDB();
 
 const app = express();
 app.use(express.json());
-app.use(cors());
-
+ 
+app.use(cors({
+    origin: [  'https://book-app-frontend-tau.vercel.app'],
+    credentials: true
+}))
 // Serve static files from the uploads directory
 app.use("/uploads", express.static("uploads"));
 // routes
