@@ -20,7 +20,7 @@ const app = express();
 app.use(express.json());
  
 app.use(cors({
-    origin: [  'https://book-app-frontend-tau.vercel.app'],
+    origin: [ 'https://schoolwebsite1frontend-0512.onrender.com/'],
     credentials: true
 }))
 // Serve static files from the uploads directory
