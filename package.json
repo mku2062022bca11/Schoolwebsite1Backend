@@ -1,13 +1,13 @@
 {
   "name": "day38",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Backend API with Express and MongoDB",
+  "main": "server.js",
   "scripts": {
-    "start": "nodemon server.js"
+    "start": "node server.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "Manikandan",
   "license": "ISC",
   "dependencies": {
     "bcryptjs": "^3.0.2",
@@ -16,7 +16,6 @@
     "express": "^5.1.0",
     "mongoose": "^8.17.2",
     "multer": "^2.0.2",
-    "nodemailer": "^6.9.4",
-    "nodemon": "^3.1.10"
+    "nodemailer": "^6.9.4"
   }
 }
