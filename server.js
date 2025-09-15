@@ -20,7 +20,7 @@ const app = express();
 app.use(express.json());
  
 app.use(cors({
-    origin: [ 'https://schoolwebsite1frontend-0512.onrender.com', 'http://localhost:5173'],
+    origin: [ 'https://schoolwebsitefrontend.onrender.com', 'http://localhost:5173'],
     credentials: true
 }))
 // Serve static files from the uploads directory
