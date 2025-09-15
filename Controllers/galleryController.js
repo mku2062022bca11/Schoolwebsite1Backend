@@ -14,8 +14,10 @@ const uploadImage = async (req, res) => {
         return res.status(400).json({ message: "Category is required" });
     }
 
-    // Create direct link URL for the uploaded image
-    const imageUrl = `http://localhost:5000/uploads/${req.file.filename}`;
+    // Create direct link URL for the uploaded image dynamically
+    const protocol = req.protocol;
+    const host = req.get('host');
+    const imageUrl = `${protocol}://${host}/uploads/${req.file.filename}`;
 
     const validFormats = ['.jpg', '.jpeg', '.png', '.webp'];
     const fileExtension = path.extname(req.file.filename).toLowerCase();
